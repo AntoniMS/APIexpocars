@@ -63,7 +63,7 @@
             },
 
          {
-            "endpoint": "/api/expos/filter/:id", 
+            "endpoint": "/api/expos/filter/:country", 
             "description": "You can search Expositions by country: Germany, Japan, Switzerland, France",
             "endpointExample" :"/api/expos/filter/Japan",
             "action": "GET",
