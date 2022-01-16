@@ -6,7 +6,7 @@
             "parameters": {
                 "name": "Name Surname",
                 "email":"example@mail.com",
-                "password": "Pass12345!"
+                "password": "Pass12345! [(Should contain a min/max of 8/12 characters, using a mix of uppercase and lowercase letters, numbers, and special characters.)]"  
             },
             "response": {
                 "name": "Name Surname",
