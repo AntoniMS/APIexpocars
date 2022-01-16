@@ -4,9 +4,9 @@ const upload = require('../../middlewares/file')
 const { postNewExpo, getAllExpos, getExpo, getExpoFilter } = require('./expo.controller')
 
 
-ExpoRoutes.get('/', getAllExpos)
-ExpoRoutes.get('/:id', getExpo)
-ExpoRoutes.get('/filter/:country', getExpoFilter)
+ExpoRoutes.get('/',[isAuth], getAllExpos)
+ExpoRoutes.get('/:id',[isAuth], getExpo)
+ExpoRoutes.get('/filter/:country', [isAuth], getExpoFilter)
 
 //ExpoRoutes.post('/', [isAuth], upload.single('img'), postNewExpo)
 
