@@ -6,7 +6,7 @@ const { postNewVehicle, getAllVehicles, getVehicle, patchVehicle, deleteVehicle,
 
 VehicleRoutes.get('/', getAllVehicles)
 VehicleRoutes.get('/:id', getVehicle)
-VehicleRoutes.get('/filter/:type', [isAuth], getVehicleFilter)
+VehicleRoutes.get('/filter/:type', getVehicleFilter)
 //VehicleRoutes.post('/', [isAuth], upload.single('img'), postNewVehicle)
 //VehicleRoutes.patch('/:id', [isAuth], upload.single('img'), patchVehicle)
 //VehicleRoutes.delete('/:id', [isAuth], upload.single('img'), deleteVehicle)
